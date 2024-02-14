@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { PrintComponent } from './print/print.component'; // Import the PrintComponent
+import { PrintComponent } from './print/print.component'; 
 
 @Component({
   selector: 'app-root',
@@ -7,9 +7,8 @@ import { PrintComponent } from './print/print.component'; // Import the PrintCom
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild('printComponent') printComponent!: PrintComponent; // ViewChild to access the PrintComponent
-
+  @ViewChild('printComponent') printComponent!: PrintComponent; 
   print(): void {
-    this.printComponent.printDocument(); // Call the printDocument() method of the PrintComponent
+    this.printComponent.printDocument(); 
   }
 }

@@ -6,10 +6,9 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class PrintComponent {
-  htmlContent: string = ''; // Variable to store the HTML content
+  htmlContent: string = ''; 
 
   constructor() {
-    // Assign your HTML content to the variable
     this.htmlContent = `
       <div style="text-align: center;">
         <p style="max-width: 600px; text-align: left;">
@@ -28,7 +27,6 @@ export class PrintComponent {
     `;
   }
 
-  // Method to print the document
   printDocument(): void {
     let printContents = document.getElementById('print-content')?.innerHTML;
     if (printContents) {
